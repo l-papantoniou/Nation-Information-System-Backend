@@ -18,6 +18,11 @@ public class CountryStatsController {
         this.countryStatsService = countryStatsService;
     }
 
+    /**
+     * Retrieves the statistics for all countries.
+     *
+     * @return A list of CountryStats objects containing the statistics
+     */
     @GetMapping("")
     public List<CountryStats> getAllCountryStats() {
         return countryStatsService.getAllCountryStats();
