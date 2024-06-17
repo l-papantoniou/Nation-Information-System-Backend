@@ -28,4 +28,18 @@ public class CountryStatsService {
     public List<CountryStats> getCountryStatsByCountryId(Long countryId) {
         return countryStatsRepository.getByCountryId(countryId);
     }
+
+    /**
+     * Get Country Stats With Max Gdp Per Population
+     *
+     * @return a list of countryStats
+     */
+    public List<CountryStats> getCountryStatsWithMaxGdpPerPopulation() {
+        return countryStatsRepository.findCountryStatsWithMaxGdpPerPopulation();
+    }
+
+
+    public List<CountryStats> getCountryStatsByFilters(Long regionId, Integer startDate, Integer endDate) {
+        return countryStatsRepository.findCountryStatsByFilters(regionId, startDate, endDate);
+    }
 }
