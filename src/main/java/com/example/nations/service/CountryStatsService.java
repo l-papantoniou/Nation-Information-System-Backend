@@ -18,4 +18,14 @@ public class CountryStatsService {
         return countryStatsRepository.findAll();
     }
 
+
+    /**
+     * Get countryStats by country id
+     *
+     * @param countryId the id of the country
+     * @return a list of countryStats
+     */
+    public List<CountryStats> getCountryStatsByCountryId(Long countryId) {
+        return countryStatsRepository.getByCountryId(countryId);
+    }
 }
