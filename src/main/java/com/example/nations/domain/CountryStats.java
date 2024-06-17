@@ -16,8 +16,8 @@ import java.math.BigDecimal;
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class CountryStats {
 
-    @Id
-    private Long countryId;
+    @EmbeddedId
+    private CountryStatsId id;
 
     @OneToOne
     @MapsId
