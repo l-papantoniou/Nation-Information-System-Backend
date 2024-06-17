@@ -1,7 +1,5 @@
 # Nation-Information-System-Backend
 
-### README for Spring Boot Backend
-
 **README.md**
 
 ```markdown
